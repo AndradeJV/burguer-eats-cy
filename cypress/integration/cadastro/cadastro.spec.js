@@ -22,6 +22,8 @@ describe('Cadastro', () => {
             cnh: '/cadastro/assets/cnh-digital.jpg'
         }
 
+        const expectMessage = "Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato."
+
         // Preenchimento de campos
         cy.get('input[placeholder="Nome completo"]').type(entregador.nome);
         cy.get('input[name="cpf"]').type(entregador.cpf);
@@ -40,5 +42,9 @@ describe('Cadastro', () => {
 
         cy.contains('.delivery-method li', entregador.metodoEntrega).click();
         cy.get('input[accept*="image"][type=file]').attachFile(entregador.cnh);
+
+        cy.get('form button[type=submit]').click();
+
+        cy.get('div[class="swal2-html-container"]').should('have.text', expectMessage);
     });
 });
