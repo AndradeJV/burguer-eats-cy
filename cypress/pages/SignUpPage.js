@@ -34,4 +34,4 @@ class SignUpPage {
     }
 }
 
-export default SignUpPage;
+export default new SignUpPage;

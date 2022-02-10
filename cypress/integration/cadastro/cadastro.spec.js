@@ -1,9 +1,8 @@
-import SignUpPage from '../../pages/SignUpPage';
+import signUp from '../../pages/SignUpPage';
 
 describe('Cadastro', () => {
     it('Seja um entregador', () => {
-        const signUp = new SignUpPage();
-
+        
         var entregador = {
             nome: 'João Andrade',
             cpf: '00000000012',
