@@ -12,6 +12,7 @@
             "bairro": "Itaim Bibi",
             "cidadeUf": "São Paulo/SP"
         },
+        "expectMessage": "Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.",
         "metodoEntrega": "Moto",
         "cnh": "/cadastro/assets/cnh-digital.jpg"
     }
