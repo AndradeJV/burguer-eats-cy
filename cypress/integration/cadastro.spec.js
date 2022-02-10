@@ -1,4 +1,4 @@
-import signUp from '../../pages/SignUpPage';
+import signUp from '../pages/SignUpPage';
 
 describe('Cadastro', () => {
     beforeEach(function(){
